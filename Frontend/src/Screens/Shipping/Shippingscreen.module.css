@@ -1,0 +1,46 @@
+.signin{
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.btn{
+    background-color: goldenrod;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 3px black;
+    margin-top:1rem;
+    width: -webkit-fill-available;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.btn_disabled{
+    background-color: goldenrod;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: not-allowed;
+    box-shadow: 0px 0px 3px black;
+    margin-top:1rem;
+    width: -webkit-fill-available;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.maindiv{
+    box-shadow: 0px 0px 2px 0px black;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1em;
+  
+}
+.subdiv{
+    margin-top: 1rem;
+}
+.passmessage{
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}

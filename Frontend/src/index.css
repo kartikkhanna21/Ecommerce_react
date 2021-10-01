@@ -1,0 +1,161 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;  /*responsive footer*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+#root{
+  height:100%;
+}
+.App {
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr; /*fr=fragment*/
+  grid-template-rows: 3rem 1fr 3rem;
+  height: 100%;
+}
+header{
+  background-color: #203040;
+  grid-area: header;  /*this header is from grid-container*/
+  padding: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+.nav_items{
+  margin-right: 1rem;
+}
+header a{
+  color: white;
+  
+}
+header a:hover{
+  color: orange;
+}
+
+/*FLEXBOX*/
+
+.row{                 /*use on parent div */
+  display: flex;
+  flex-wrap: wrap; /*rows become responsive*/
+  justify-content: space-between; /* for max space between items*/
+  align-items: center; /* for vertical alignment*/
+}
+
+.brand{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+/*Main*/
+
+main{
+  grid-area: main;
+  padding: 1rem;
+}
+
+.product-box{
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px black;
+  margin-right: 5px;
+}
+
+.row-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 0rem;
+}
+@media only screen and (min-width:1340px) {
+  .row-products{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding-left: 0rem;
+      max-width: 1400px;
+      margin: 0 auto;
+  }
+  
+}
+li{
+  list-style: none;
+}
+
+
+
+
+/* footer */
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: white;
+}
+.row.center{
+  justify-content: center;
+}
+.cartdiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+
+}
+.cartqty{
+  border-radius: 1rem;
+  background-color: red;
+  width: 19px;
+  display: flex;
+  justify-content: center;
+  margin-left: 7px;
+
+}
+.qty{
+  color: white;
+}
+.qty:hover{
+text-decoration: none;
+color:white
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  padding: 12px 16px;
+  right: 15px;
+  background-color: #203040;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

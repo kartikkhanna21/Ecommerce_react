@@ -1,0 +1,52 @@
+.maindiv{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+.subdiv{
+    box-shadow: 0px 0px 2px 0px black;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1em;
+}
+.labeldiv{
+    margin:1rem;
+}
+.btn{
+    background-color: goldenrod;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 3px black;
+    width: 100%;
+    margin-top:1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width:540px){
+    .btn{
+        background-color: goldenrod;
+        color: black;
+        border-radius: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0px 0px 3px black;
+        width:100%;
+        margin-top:1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+.buttondiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,22 @@
+.product_image{
+    height: 250px;
+    width: 230px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .product_title{
+    margin-left: 5px;
+    font-weight: bold;
+    color: blue;
+  }
+  .product_title:hover{
+    margin-left: 5px;
+    font-weight: bold;
+    color: orange;
+    cursor: pointer;
+  }
+
+  .product_price{
+    margin-left: 5px;
+    font-weight: bold;
+  }
